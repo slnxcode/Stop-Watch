@@ -1,0 +1,88 @@
+body {
+    background-color: aquamarine;
+}
+
+.main {
+    width: 20%;
+    height: 400px;
+    margin: 80px auto;
+    border: 1px solid grey;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+    background-color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin-top: 20px;
+}
+
+.timer {
+    width: 80%;
+    height: 100px;
+    background-color: aqua;
+    margin: 30px auto;
+    border: 1px solid blue;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.click {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.start{
+    width: 25%;
+    height: 30px;
+    background-color: gainsboro;
+    border: 1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start:hover {
+    background-color: azure;
+}
+
+.pause{
+    width: 25%;
+    height: 30px;
+    background-color: gainsboro;
+    border: 1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pause:hover {
+    background-color: azure;
+}
+
+.stop{
+    width: 25%;
+    height: 30px;
+    background-color: gainsboro;
+    border: 1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.stop:hover {
+    background-color: azure;
+}
