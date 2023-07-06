@@ -3,7 +3,7 @@ const hour = document.querySelector('.hour');
 const minute = document.querySelector('.minute');
 const seconds = document.querySelector('.seconds');
 const start = document.querySelector('.start');
-const stop = document.querySelector('.stop');
+const restart = document.querySelector('.restart');
 const pause = document.querySelector('.pause');
 
 let sec = 0;
@@ -14,12 +14,17 @@ seconds.textContent = 0;
 minute.textContent = 0;
 hour.textContent = 0;
 
+
+
 start.addEventListener('click', () => {
-    sec = 1;
+    sec++;
     seconds.textContent = sec;
     function move() {
         sec++;
         seconds.textContent = sec;
+
+        let clockTimer;
+        if (clockTimer) {clearInterval(clockTimer)};
 
         if(sec > 59) {
             sec = 0;
@@ -41,14 +46,13 @@ start.addEventListener('click', () => {
         };
         
     };
-
-    const timer = setInterval(move, 1000);
+        clockTimer = setInterval(move, 1000);
 })
 
  pause.addEventListener('click', () => {
-    clearInterval(timer);
+    clearInterval(clockTimer);
 })
 
-stop.addEventListener('click', () => {
+restart.addEventListener('click', () => {
     location.reload();
 })

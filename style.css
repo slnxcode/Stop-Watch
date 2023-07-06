@@ -43,7 +43,7 @@ body {
 }
 
 .start{
-    width: 25%;
+    width: 28%;
     height: 30px;
     background-color: gainsboro;
     border: 1px solid grey;
@@ -58,7 +58,7 @@ body {
 }
 
 .pause{
-    width: 25%;
+    width: 28%;
     height: 30px;
     background-color: gainsboro;
     border: 1px solid grey;
@@ -72,8 +72,8 @@ body {
     background-color: azure;
 }
 
-.stop{
-    width: 25%;
+.restart{
+    width: 28%;
     height: 30px;
     background-color: gainsboro;
     border: 1px solid grey;
@@ -83,6 +83,6 @@ body {
     justify-content: center;  
 }
 
-.stop:hover {
+.restart:hover {
     background-color: azure;
 }
